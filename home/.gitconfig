@@ -1,0 +1,5 @@
+[user]
+	name = Lukas Stabe
+	email = lukas@stabe.de
+[hub]
+	protocol = ssh

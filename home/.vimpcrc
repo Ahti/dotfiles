@@ -1,0 +1,11 @@
+set mouse
+set ignorecase
+set expand-artists
+set singlequit
+set windows library,playlist,help
+set window library
+
+alias updatenas !mpc -h nas.local update
+
+map q :q<Enter>
+map <BS> <Nop>
