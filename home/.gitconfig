@@ -1,5 +1,7 @@
 [user]
 	name = Lukas Stabe
 	email = lukas@stabe.de
+[core]
+        excludesfile = /Users/lukas/.gitignore_global
 [hub]
 	protocol = ssh
