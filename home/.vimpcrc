@@ -6,6 +6,8 @@ set windows library,playlist,help
 set window library
 
 alias updatenas !mpc -h nas.local update
+alias clear deleteall
 
 map q :q<Enter>
+map <C-r> :reconnect<Enter>
 map <BS> <Nop>
