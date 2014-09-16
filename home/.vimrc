@@ -39,3 +39,5 @@ set wrap "Wrap lines
 map j gj
 map k gk
 
+imap jj <Esc>
+map ; :
