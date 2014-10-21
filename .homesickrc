@@ -1,0 +1,7 @@
+if File.exists? "#{Dir.home}/.vim/bundle/Vundle.vim"
+  puts "Installing vim plugins"
+  system "vim -u #{Dir.home}/.vim/bundle.vim +BundleInstall +qall"
+else
+  puts "Please link the castle before running the rc"
+end
+
