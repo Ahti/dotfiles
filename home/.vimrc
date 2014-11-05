@@ -1,4 +1,4 @@
-source .vim/bundle.vim
+source ~/.vim/bundle.vim
 
 set mouse=a " use the mouse, luke
 set history=700 " keep 700 lines of command history
