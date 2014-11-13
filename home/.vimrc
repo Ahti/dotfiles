@@ -37,9 +37,17 @@ set ai "Auto indent
 set si "Smart indent
 set wrap "Wrap lines
 
+" respect modeline settings
+set modeline
+
 " Treat long lines as break lines (useful when moving around in them)
 map j gj
 map k gk
 
 imap jj <Esc>
 map ; :
+
+" open new splits right and bottom
+set splitbelow
+set splitright
+
