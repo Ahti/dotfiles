@@ -1,8 +1,8 @@
 # editorconfig.org
 root = true
 
-# c-like languages
-[*.{c,h,cpp,hpp,m,mpp,swift}]
+# generic rules
+[*]
 indent_style = space
 indent_size = 4
 

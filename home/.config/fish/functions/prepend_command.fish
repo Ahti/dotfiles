@@ -1,7 +1,7 @@
 function prepend_command
   set -l prepend $argv[1]
   if test -z "$prepend"
-    echo "prepend-command needs one argument."
+    echo "prepend_command needs one argument."
     return 1
   end
 
