@@ -11,3 +11,7 @@ if uname -r | grep ARCH >/dev/null
     # use paths from /etc/profile.d
     env -i HOME=$HOME sh -l -c 'export -p' | sed -e "/PATH/s/\"//g;/PATH/s/:/ /g;s/=/ /;s/^export/set -x/;/^set -x PATH /!d" | source
 end
+
+if test -d ~/.cargo/bin
+    set PATH $PATH ~/.cargo/bin
+end
