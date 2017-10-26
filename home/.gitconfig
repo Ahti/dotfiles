@@ -1,9 +1,11 @@
 [user]
-	name = Lukas Stabe
-	email = lukas@stabe.de
+    name = Lukas Stabe
+    email = lukas@stabe.de
 [core]
-        excludesfile = /Users/lukas/.gitignore_global
+    excludesfile = /Users/lukas/.gitignore_global
+[diff]
+    algorithm = patience
 [hub]
-	protocol = ssh
+    protocol = ssh
 [push]
-	default = simple
+    default = simple

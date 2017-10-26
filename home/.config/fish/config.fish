@@ -15,3 +15,7 @@ end
 if test -d ~/.cargo/bin
     set PATH $PATH ~/.cargo/bin
 end
+
+if test -d ~/.bin
+    set PATH $PATH ~/.bin
+end

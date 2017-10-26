@@ -46,9 +46,8 @@ Plug 'tpope/vim-speeddating'
 Plug 'mhinz/vim-sayonara'
 Plug 'ryanmorillo/excel.vim'
 Plug 'godlygeek/tabular'
-Plug 'Valloric/YouCompleteMe', { 'do': 'python2 install.py --clang-completer --system-libclang --system-boost' }
-Plug 'rdnetto/YCM-Generator', { 'branch': 'stable'}
 Plug 'mhinz/neovim-remote'
+Plug 'morhetz/gruvbox'
 
 call plug#end()
 
@@ -56,7 +55,8 @@ call plug#end()
 let mapleader = ","     " map leader to ,
 set mouse=a             " make sure mouse is used in all cases.
 set t_Co=256            " set 256 color
-colorscheme badwolf   " define syntax color scheme
+colorscheme gruvbox   " define syntax color schemeS
+set background=dark
 set shortmess+=I        " disable the welcome screen
 set clipboard+=unnamed  " yank and copy to X clipboard
 set backspace=2         " full backspacing capabilities
@@ -78,6 +78,9 @@ syntax on               " enable syntax highlighting
 filetype plugin indent on
 
 map ; :
+imap jj <Esc>
+map j gj
+map k gk
 
 " cursor settings
 set nocursorline        " don't highlight cursor line (this makes scrolling slow)
