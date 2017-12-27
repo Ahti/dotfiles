@@ -9,3 +9,10 @@
     protocol = ssh
 [push]
     default = simple
+[sendemail]
+    smtpServer = smtp.gmail.com
+    smtpServerPort = 587
+    smtpEncryption = tls
+    smtpUser = ahti333@gmail.com
+    # from = lukas@stabe.de
+  
