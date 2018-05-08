@@ -34,7 +34,7 @@ Plug 'honza/vim-snippets'
 Plug 'Lokaltog/vim-easymotion'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'tacahiroy/ctrlp-funky'
-Plug 'nixprime/cpsm', { 'do': './install.sh' }
+" Plug 'nixprime/cpsm', { 'do': './install.sh' }
 Plug 'dyng/ctrlsf.vim'
 Plug 'thinca/vim-quickrun'
 Plug 'sjl/gundo.vim'
@@ -48,6 +48,15 @@ Plug 'ryanmorillo/excel.vim'
 Plug 'godlygeek/tabular'
 Plug 'mhinz/neovim-remote'
 Plug 'morhetz/gruvbox'
+
+Plug 'autozimu/LanguageClient-neovim', {
+    \ 'branch': 'next',
+    \ 'do': 'bash install.sh',
+    \ }
+
+" (Optional) Multi-entry selection UI.
+Plug 'junegunn/fzf'
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 
 call plug#end()
 
@@ -164,7 +173,7 @@ let g:ctrlp_mruf_relative = 1
 let g:ctrlp_use_caching = 0
 
 " cpsm
-let g:ctrlp_match_func = {'match': 'cpsm#CtrlPMatch'}
+" let g:ctrlp_match_func = {'match': 'cpsm#CtrlPMatch'}
 
 
 " ctrlp-funky
@@ -265,3 +274,13 @@ let g:zipPlugin_ext = '*.zip,*.jar,*.xpi,*.ja,*.war,*.ear,*.celzip,*.oxt,*.kmz,*
 
 " gui
 set guioptions=agi
+
+" language server
+let g:deoplete#enable_at_startup = 1
+let g:LanguageClient_serverCommands = {
+    \ 'swift': ['/home/lukas/code/langserver-swift/.build/x86_64-unknown-linux/debug/langserver-swift'],
+    \ }
+
+nnoremap <silent> K :call LanguageClient#textDocument_hover()<CR>
+nnoremap <silent> gd :call LanguageClient#textDocument_definition()<CR>
+nnoremap <silent> <F2> :call LanguageClient#textDocument_rename()<CR>
