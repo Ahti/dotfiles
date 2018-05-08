@@ -87,6 +87,9 @@ syntax on               " enable syntax highlighting
 filetype plugin indent on
 
 map ; :
+imap jj <Esc>
+map j gj
+map k gk
 
 " cursor settings
 set nocursorline        " don't highlight cursor line (this makes scrolling slow)

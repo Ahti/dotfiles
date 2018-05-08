@@ -15,3 +15,15 @@ end
 if test -d ~/.cargo/bin
     set PATH $PATH ~/.cargo/bin
 end
+
+if test -d ~/.bin
+    set PATH $PATH ~/.bin
+end
+
+if test -d /usr/local/sbin
+    set PATH $PATH /usr/local/sbin
+end
+
+if which gem > /dev/null
+    set PATH $PATH (ruby -rubygems -e 'puts Gem.user_dir')/bin
+end
