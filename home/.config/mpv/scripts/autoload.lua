@@ -23,7 +23,7 @@ end
 
 EXTENSIONS = Set {
     'mkv', 'avi', 'mp4', 'ogv', 'webm', 'rmvb', 'flv', 'wmv', 'mpeg', 'mpg', 'm4v', '3gp',
-    'mp3', 'wav', 'ogv', 'flac', 'm4a', 'wma',
+    'mp3', 'wav', 'ogv', 'flac', 'm4a', 'wma', 'dv',
 }
 
 mputils = require 'mp.utils'

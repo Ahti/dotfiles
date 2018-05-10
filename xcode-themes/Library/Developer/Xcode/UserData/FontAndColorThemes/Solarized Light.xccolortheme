@@ -31,13 +31,13 @@
 	<key>DVTDebuggerInstructionPointerColor</key>
 	<string>0.705792 0.8 0.544 1</string>
 	<key>DVTFontSizeModifier</key>
-	<integer>-2</integer>
+	<integer>2</integer>
 	<key>DVTLineSpacing</key>
 	<real>1.1000000238418579</real>
 	<key>DVTMarkupTextBackgroundColor</key>
-	<string>0.0946504 0.196399 0.22692 1</string>
+	<string>0.949857 0.919626 0.829498 1</string>
 	<key>DVTMarkupTextBorderColor</key>
-	<string>0.167078 0.260687 0.288767 1</string>
+	<string>0.873868 0.846056 0.763138 1</string>
 	<key>DVTMarkupTextCodeFont</key>
 	<string>SFMono-Regular - 13.0</string>
 	<key>DVTMarkupTextEmphasisColor</key>
@@ -57,31 +57,31 @@
 	<key>DVTMarkupTextOtherHeadingColor</key>
 	<string>0.44058 0.509629 0.516858 0.5</string>
 	<key>DVTMarkupTextOtherHeadingFont</key>
-	<string>.SFNSDisplay - 19.0</string>
+	<string>.SFNSText - 17.4</string>
 	<key>DVTMarkupTextPrimaryHeadingColor</key>
 	<string>0.44058 0.509629 0.516858 1</string>
 	<key>DVTMarkupTextPrimaryHeadingFont</key>
-	<string>.SFNSDisplay - 34.0</string>
+	<string>.SFNSDisplay - 28.4</string>
 	<key>DVTMarkupTextSecondaryHeadingColor</key>
 	<string>0.44058 0.509629 0.516858 1</string>
 	<key>DVTMarkupTextSecondaryHeadingFont</key>
-	<string>.SFNSDisplay - 25.0</string>
+	<string>.SFNSDisplay - 21.8</string>
 	<key>DVTMarkupTextStrongColor</key>
 	<string>0.44058 0.509629 0.516858 1</string>
 	<key>DVTMarkupTextStrongFont</key>
 	<string>.SFNSText-Bold - 13.0</string>
 	<key>DVTSourceTextBackground</key>
-	<string>0.0159244 0.126521 0.159696 1</string>
+	<string>0.989434 0.957944 0.86406 1</string>
 	<key>DVTSourceTextBlockDimBackgroundColor</key>
 	<string>0.5 0.5 0.5 1</string>
 	<key>DVTSourceTextCurrentLineHighlightColor</key>
-	<string>0.0217885 0.13492 0.169355 1</string>
+	<string>0.971103 0.940961 0.847498 1</string>
 	<key>DVTSourceTextInsertionPointColor</key>
 	<string>0.505992 0.564858 0.563637 1</string>
 	<key>DVTSourceTextInvisiblesColor</key>
 	<string>0.5 0.5 0.5 1</string>
 	<key>DVTSourceTextSelectionColor</key>
-	<string>0.0393807 0.160116 0.198333 1</string>
+	<string>0.916111 0.890012 0.797811 1</string>
 	<key>DVTSourceTextSyntaxColors</key>
 	<dict>
 		<key>xcode.syntax.attribute</key>
@@ -176,7 +176,7 @@
 		<key>xcode.syntax.preprocessor</key>
 		<string>SFMono-Regular - 14.0</string>
 		<key>xcode.syntax.string</key>
-		<string>SFMono-Bold - 14.0</string>
+		<string>SFMono-Regular - 14.0</string>
 		<key>xcode.syntax.url</key>
 		<string>SFMono-Regular - 14.0</string>
 	</dict>

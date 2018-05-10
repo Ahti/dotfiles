@@ -6,6 +6,8 @@ set -x NVIM_TUI_ENABLE_CURSOR_SHAPE 1
 set -g theme_display_user yes
 set -g default_user lukas
 
+set -x LANG en_US.UTF-8
+
 # only if we're reasonably sure we're running on arch
 if uname -r | grep ARCH >/dev/null
     # use paths from /etc/profile.d
@@ -13,17 +15,17 @@ if uname -r | grep ARCH >/dev/null
 end
 
 if test -d ~/.cargo/bin
-    set PATH $PATH ~/.cargo/bin
+    set PATH ~/.cargo/bin $PATH 
 end
 
 if test -d ~/.bin
-    set PATH $PATH ~/.bin
+    set PATH ~/.bin $PATH
 end
 
 if test -d /usr/local/sbin
     set PATH $PATH /usr/local/sbin
 end
 
-if which gem > /dev/null
+if which gem >/dev/null ^/dev/null
     set PATH $PATH (ruby -rubygems -e 'puts Gem.user_dir')/bin
 end
