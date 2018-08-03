@@ -27,5 +27,8 @@ if test -d /usr/local/sbin
 end
 
 if which gem >/dev/null ^/dev/null
-    set PATH $PATH (ruby -rubygems -e 'puts Gem.user_dir')/bin
+    set -l p (ruby -r rubygems -e 'puts Gem.user_dir')/bin
+    if test -d $p
+        set PATH $PATH $p
+    end
 end
