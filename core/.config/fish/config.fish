@@ -8,6 +8,12 @@ set -g default_user lukas
 
 set -x LANG en_US.UTF-8
 
+function __tmux_update_env --on-event fish_preexec
+    # if in tmux, reload SSH_AUTH_SOCK and DISPLAY
+    # before each command is run
+    test ! -z "$TMUX"; and eval (tmux show-env -s | grep 'SSH_AUTH_SOCK=\|DISPLAY=' | sed 's/^/export /g')
+end
+
 # only if we're reasonably sure we're running on arch
 if uname -r | grep ARCH >/dev/null
     # use paths from /etc/profile.d
