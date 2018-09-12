@@ -7,6 +7,7 @@ set -g theme_display_user yes
 set -g default_user lukas
 
 set -x LANG en_US.UTF-8
+set -x EDITOR nvim
 
 function __tmux_update_env --on-event fish_preexec
     # if in tmux, reload SSH_AUTH_SOCK and DISPLAY
