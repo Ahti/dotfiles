@@ -14,8 +14,8 @@
 
 
 set -g current_bg NONE
-set segment_separator \uE0C8
-set right_segment_separator \uE0C8
+set segment_separator \ue0b0
+set right_segment_separator \ue0b2
 # ===========================
 # Helper methods
 # ===========================
