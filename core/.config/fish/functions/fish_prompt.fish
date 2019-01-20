@@ -91,8 +91,12 @@ end
 function prompt_user -d "Display actual user if different from $default_user"
   if [ "$theme_display_user" = "yes" ]
     if [ "$USER" != "$default_user" -o -n "$SSH_CLIENT" ]
-      set USER_PROMPT (whoami)@(hostname)
-      prompt_segment black yellow $USER_PROMPT
+      if [ (id -u) = 0 ]
+        prompt_segment 47000c red (hostname)" #"
+      else
+        set USER_PROMPT (whoami)@(hostname)
+        prompt_segment black yellow $USER_PROMPT
+      end
     end
   end
 end
@@ -127,12 +131,6 @@ end
 function prompt_status -d "the symbols for a non zero exit status, root and background jobs"
     if [ $RETVAL -ne 0 ]
       prompt_segment black red "✘"
-    end
-
-    # if superuser (uid == 0)
-    set -l uid (id -u $USER)
-    if [ $uid -eq 0 ]
-      prompt_segment black yellow "⚡"
     end
 
     # Jobs display
