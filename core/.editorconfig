@@ -9,7 +9,7 @@ indent_size = 4
 [*.yml]
 indent_size = 2
 
-[{Gemfile, Fastfile}]
+[{Gemfile,Fastfile,*.rb}]
 indent_size = 2
 
 [Makefile]

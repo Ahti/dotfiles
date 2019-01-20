@@ -21,7 +21,7 @@ if uname -r | grep ARCH >/dev/null
 end
 
 if test -d ~/.cargo/bin
-    set PATH ~/.cargo/bin $PATH 
+    set PATH ~/.cargo/bin $PATH
 end
 
 if test -d ~/.bin

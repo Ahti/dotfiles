@@ -15,4 +15,3 @@
     smtpEncryption = tls
     smtpUser = ahti333@gmail.com
     # from = lukas@stabe.de
-  
