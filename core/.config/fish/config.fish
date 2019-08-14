@@ -39,3 +39,7 @@ if which gem >/dev/null ^/dev/null
         set PATH $PATH $p
     end
 end
+
+# eager-load prompt, then iterm2 integration, since it modifies the prompt
+source ~/.config/fish/functions/fish_prompt.fish
+source ~/.config/fish/iterm2.fish
